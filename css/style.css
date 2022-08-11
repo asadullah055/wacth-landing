@@ -451,6 +451,7 @@ button:focus {
   padding-bottom: 100px;
 }
 /* swiper js  */
+.swiper2,
 .swiper1 {
   margin-left: auto;
   margin-right: auto;
@@ -460,6 +461,7 @@ button:focus {
   padding: 0;
   z-index: 1;
 }
+.indecator2,
 .indecator {
   display: flex;
   align-items: center;
@@ -476,6 +478,7 @@ button:focus {
   border-radius: 50%;
   margin: 0 10px;
   transition: all 0.3s ease-in;
+  background-color: #fff;
 }
 .next:hover,
 .prev:hover {
@@ -564,7 +567,8 @@ button:focus {
 .fun-icon-outter {
   position: absolute;
   top: 20%;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .fun-icon-outter i {
   font-size: 40px;
@@ -643,6 +647,68 @@ button:focus {
 tbody .t-row th {
   width: 150px;
 }
+/* testimonial  */
+.testimonial {
+  background-color: #10b9811f;
+  padding: 70px 0;
+}
+.client {
+  background-color: #fff;
+  box-shadow: 0px 30px 20px 0px rgba(0, 37, 93, 0.15);
+  border-radius: 15px;
+  margin: 55px 30px 35px;
+  padding: 85px 30px 27px;
+}
+.clint-img {
+  position: absolute;
+  width: 120px;
+  padding: 15px;
+  height: 120px;
+  top: -50px;
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clint-img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  z-index: -1;
+  border-radius: 50%;
+}
+.clint-img img {
+  border-radius: 50%;
+  background-color: #fff;
+}
+.client-say {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  hyphens: auto;
+}
+.client-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.designation {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 25px;
+  color: #555;
+}
 @media only screen and (max-width: 991px) {
   .right-area {
     text-align: center;
@@ -679,6 +745,44 @@ tbody .t-row th {
   .product-img {
     padding: 15px 3px;
   }
+  .compare-area {
+    padding: 40px 0;
+  }
+  .testimonial {
+    padding-top: 35px;
+  }
+  .why-choose {
+    padding: 25px 0 30px;
+  }
+  .offer {
+    padding: 30px 0;
+  }
+  .product-area {
+    padding-top: 30px;
+  }
+  .feature {
+    padding-top: 11px;
+    padding-bottom: 20px;
+  }
+  .row-one {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .feature-list {
+    margin-top: 30px;
+  }
+  .icone {
+    font-size: 40px;
+  }
+  .content {
+    padding: 5px 5px;
+  }
+  .info {
+    margin-top: 20px;
+  }
+  .about {
+    padding: 30px 0 25px;
+  }
 }
 @media only screen and (max-width: 577px) {
   .about-img .img {
@@ -701,5 +805,8 @@ tbody .t-row th {
   }
   .offer-slider-area {
     padding: 20px;
+  }
+  .compare-area {
+    padding: 35px 0;
   }
 }

@@ -23,7 +23,23 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     991: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
+  },
+});
+const swiper2 = new Swiper(".swiper2", {
+  spaceBetween: 30,
+  loop: true,
+  grabCursor: true,
+  effect: "cube",
+  cubeEffect: {
+    shadow: false,
+    slideShadows: false,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
   },
 });
